@@ -22,5 +22,5 @@ const hubot =`
 
 exports.hubot = (req, res) => {
   console.log(`Returned hubot!`)
-  res.send(hubot)
+  res.send(`<pre><code>${hubot}</code></pre>`)
 }
