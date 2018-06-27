@@ -1,7 +1,26 @@
-const MUPPETS = ["Kermit", "Miss Piggy", "Fozzie", "Animal", "Scooter", "Skeeter", "Rowlf", "Gonzo", "Bunsen", "Beaker"]
+const hubot =`
+         _____
+         ╲    ╲
+         │    │
+         │    │                      ___________________________
+         └─#──┘    ########         /                           |
+           ##     ##~ ~ ~ ##       /                            |
+         #####    ##########     <   I have done the things!    |
+         #####    ##########       \                            |
+          ###  #######╱╱#######     \___________________________|
+           |  / ####╱╱ HUBOT ##\                .
+            \/  ##╱╱########### \               .
+                ╱╱############   |              .
+                 #############  ###
+                 #############  ####
+                    ######      ####
+                     ###         XX
+                      ##
+                      #
+`
 
-exports.randomMuppet = (req, res) => {
-  const muppet = MUPPETS[Math.floor(Math.random()*MUPPETS.length)]
-  console.log(`Returned another muppet! ${muppet}`)
-  res.send(`I be ${muppet}!`)
+
+exports.hubot = (req, res) => {
+  console.log(`Returned hubot!`)
+  res.send(hubot)
 }
