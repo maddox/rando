@@ -1,6 +1,6 @@
 {
   "noodle": {
     "provider": "gcf",
-    "functionName": "randomMuppet"
+    "functionName": "hubot"
   }
 }
